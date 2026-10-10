@@ -30,10 +30,20 @@ class Matrix {
 
         }
 
-        void add_matrix(int matrix_1[3][3], int matrix_2[3][3]) {
+        void add_matrix(int matrix_1[3][3], int matrix_2[3][3], int matrix3[3][3]) {
 
-            
+            for (int i = 0; i<3; i++) {
+
+                for (int j = 0; j<3; j++) {
+                
+                    matrix3[i][j] = matrix1[i][j] + matrix2[i][j];
+
+                }   
+
+            }
+
         }
+
 };
 
 
