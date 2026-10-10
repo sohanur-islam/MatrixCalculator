@@ -1,0 +1,17 @@
+# Compiled executables
+MatrixCalculator
+MatrixCalculator.exe
+*.out
+
+# Object files
+*.o
+*.obj
+
+# Debug symbols and generated build files
+*.dSYM/
+build/
+cmake-build-*/
+
+# Editor and operating system clutter
+*~
+.vscode/
