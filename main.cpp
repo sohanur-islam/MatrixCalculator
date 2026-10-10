@@ -35,7 +35,7 @@ class Matrix {
             }
 
             cout << endl;
-            
+
         }
 
 
@@ -111,6 +111,20 @@ int main(){
 
     m1.show_matrix(m1.matrix1);
     m1.show_matrix(m1.matrix2);
+    m1.add_matrix(m1.matrix1, m1.matrix2, m1.matrix3);
+    m1.show_matrix(m1.matrix3);
+    m1.subtract_matrix(m1.matrix1, m1.matrix2, m1.matrix3);
+    m1.show_matrix(m1.matrix3);
+    m1.trace_matrix(m1.matrix1);
+    cout << m1.trace << endl;
+    m1.trace_matrix(m1.matrix2);
+    cout << m1.trace << endl;
+    m1.trace_matrix(m1.matrix3);
+    cout << m1.trace << endl;
 
+
+    
     return 0;
+
+
 }
