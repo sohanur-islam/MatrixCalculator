@@ -34,6 +34,8 @@ class Matrix {
 
             }
 
+            cout << endl;
+            
         }
 
 
@@ -84,6 +86,31 @@ class Matrix {
 
 int main(){
     cout << "MatRixSimPle" << endl;
+    
+    Matrix m1;
+    
+    for (int i = 0; i<3; i++) {
+        
+        for (int j = 0; j<3; j++) {
+
+            m1.matrix1[i][j] = i;
+
+        }
+    }
+
+
+    for (int i = 0; i<3; i++) {
+            
+            for (int j = 0; j<3; j++) {
+
+                m1.matrix2[i][j] = j+1;
+
+            }
+    }
+
+
+    m1.show_matrix(m1.matrix1);
+    m1.show_matrix(m1.matrix2);
 
     return 0;
 }
