@@ -91,7 +91,7 @@ class Matrix {
                     
                     for (int k = 0; k<3; k++) {
                     
-                        matrix_3[i][j] = matrix_1[j][k]*matrix_2[k][j];
+                        matrix_3[i][j] += matrix_1[j][k]*matrix_2[k][j];
 
                     }
 
