@@ -30,24 +30,24 @@ class Matrix {
 
                 }
 
-                cout << endl;
+                cout << '\n';
 
             }
 
-            cout << endl;
+            cout << '\n';
 
         }
 
 
         //addition method
 
-        void add_matrix(int matrix_1[3][3], int matrix_2[3][3], int matrix3[3][3]) {
+        void add_matrix(int matrix_1[3][3], int matrix_2[3][3], int matrix_3[3][3]) {
 
             for (int i = 0; i<3; i++) {
 
                 for (int j = 0; j<3; j++) {
                 
-                    matrix3[i][j] = matrix1[i][j] + matrix2[i][j];
+                    matrix_3[i][j] = matrix_1[i][j] + matrix_2[i][j];
 
                 }   
 
@@ -59,13 +59,13 @@ class Matrix {
 
         //subtraction method
 
-        void subtract_matrix(int matrix_1[3][3], int matrix_2[3][3], int matrix3[3][3]) {
+        void subtract_matrix(int matrix_1[3][3], int matrix_2[3][3], int matrix_3[3][3]) {
 
             for (int i = 0; i<3; i++) {
 
                 for (int j = 0; j<3; j++) {
                 
-                    matrix3[i][j] = matrix1[i][j] - matrix2[i][j];
+                    matrix_3[i][j] = matrix_1[i][j] - matrix_2[i][j];
 
                 }   
 
@@ -81,6 +81,26 @@ class Matrix {
             trace = matrix[0][0] + matrix[1][1] + matrix[2][2];
 
         }
+
+        //multiplication of matrix
+        void multiply_matrix(int matrix_1[3][3], int matrix_2[3][3], int matrix_3[3][3]){
+
+            for (int i = 0; i<3; i++) {
+                
+                for(int j = 0; j<3; j++){
+                    
+                    for (int k = 0; k<3; k++) {
+                    
+                        matrix_3[i][j] = matrix_1[j][k]*matrix_2[k][j];
+
+                    }
+
+                }
+
+            }
+
+        }
+        
 };
 
 
@@ -123,7 +143,7 @@ int main(){
     cout << m1.trace << endl;
 
 
-    
+
     return 0;
 
 
